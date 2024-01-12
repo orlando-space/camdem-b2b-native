@@ -1,0 +1,3 @@
+{
+  "components/f/category/sub-category-children": "{{#and is_active children}}\n<ul class=\"navList\">\n    {{#each children}}\n    <li class=\"navList-item\">\n        <a class=\"navList-action {{#and is_active (if name '===' ../current_cat)}}navList-action-active{{/and}}\" href=\"{{url}}\" alt=\"{{name}}\" title=\"{{name}}\">{{name}}</a>\n        {{> components/f/category/sub-category-children current_cat=../current_cat}}\n    </li>\n    {{/each}}\n</ul>\n{{/and}}\n"
+}

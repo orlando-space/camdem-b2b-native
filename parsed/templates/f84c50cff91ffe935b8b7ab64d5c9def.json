@@ -1,0 +1,3 @@
+{
+  "components/f/swatches/performance-sizes": "<div class=\"card-sizes\">\n    <div class=\"card-label\">{{lang 'products.sizes_available'}}</div>\n    {{#each custom_fields}}\n        {{#if name \"===\" \"Sizes Available\"}}\n            {{#each (arrayify (split value))}}\n                <div class=\"form-option\">\n                    <span class=\"form-option-variant\">{{chop this}}</span>\n                </div>\n            {{/each}}\n        {{/if}}\n    {{/each}}\n</div>\n"
+}

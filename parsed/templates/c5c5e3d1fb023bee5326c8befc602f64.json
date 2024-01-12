@@ -1,0 +1,3 @@
+{
+  "components/f/b2b/list-added-response": "{{#if customer.wishlists}}\n    <span>{{lang 'b2b.save_cart.save_to_list'}}</span>\n    <select name=\"list-id\" id=\"list-id\" class=\"form-select\">\n        {{#each customer.wishlists}}\n        <option value=\"{{id}}\"{{#if @last}} selected{{/if}}>{{name}} ({{num_items}})</option>\n        {{/each}}\n    </select>\n{{/if}}\n"
+}

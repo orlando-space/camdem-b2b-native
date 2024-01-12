@@ -1,0 +1,23 @@
+.subCategories {
+  width: 100%;  
+}
+
+.subCategory {
+    margin-bottom: spacing("single");
+
+    &-name--center {
+        text-align: center;
+    }
+
+    &-image {
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+    }
+
+    &-name {
+        padding: spacing("half");
+    }
+}

@@ -1,0 +1,3 @@
+{
+  "components/f/tags/custom-tag": "<span class=\"storeTag customTag\">{{this.value}}</span>\n"
+}

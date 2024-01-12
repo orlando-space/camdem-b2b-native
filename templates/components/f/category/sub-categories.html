@@ -1,0 +1,19 @@
+<div class="subCategories grid gridColumns--{{theme_settings.subcategories_grid_column_count}}">
+    {{#each category.subcategories}}
+        <div class="gridColumn subCategory">
+            {{#if image}}
+            <div class="subCategory-image">
+              <a href="{{url}}">
+                {{> components/common/responsive-img
+                    image=image
+                    fallback_size=theme_settings.productgallery_size
+                    lazyload=theme_settings.lazyload_mode
+                    default_image=theme_settings.default_image_product
+                }}
+              </a>
+            </div>
+            {{/if}}
+            <div class="subCategory-name {{#if image}}subCategory-name--center{{/if}}"><a href="{{url}}">{{name}}</a></div>
+        </div>
+    {{/each}}
+</div>

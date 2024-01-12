@@ -1,0 +1,3 @@
+{
+  "components/common/login-for-pricing": "{{#if deactivated}}\n<span class=\"warning--login-for-princing\">{{lang 'b2b.lockdown.account_not_active'}}</span>\n{{else}}\n<span class=\"warning--login-for-princing\">{{lang 'b2b.lockdown.login_for_pricing'}}</span>\n{{/if}}\n"
+}

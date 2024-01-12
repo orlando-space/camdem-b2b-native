@@ -1,0 +1,85 @@
+{{#if settings.add_this.buttons}}
+    <div class="addthis_toolbox addthis_32x32_style" addthis:url="{{url}}"
+         addthis:title="{{title}}">
+        <ul class="socialLinks">
+            {{#each settings.add_this.buttons}}
+                {{#all (if service '!==' 'email') (if service '!==' 'print') (if service '!==' 'facebook_like')}}
+                <li class="socialLinks-item socialLinks-item--{{service}}">
+                    <a class="addthis_button_{{service}} icon icon--{{service}}" {{{annotation}}} {{#if service '===' 'pinterest'}}data-pin-log="button_pinit_bookmarklet" data-pin-href="https://www.pinterest.com/pin/create/button/"{{/if}} {{#if service '===' 'google_plusone'}}href="https://plus.google.com/share?url={{../../../url}}" target="_blank"{{/if}}>
+                        {{#if service '===' 'google_plusone'}}
+                            <!-- No custom icons allowed with g+ -->
+                            <svg>
+                                <use xlink:href="#icon-google"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'facebook'}}
+                            <svg>
+                                <use xlink:href="#icon-facebook"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'twitter'}}
+                            <svg>
+                                <use xlink:href="#icon-twitter"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'linkedin'}}
+                            <svg>
+                                <use xlink:href="#icon-linkedin"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'google'}}
+                            <svg>
+                                <use xlink:href="#icon-google"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'pinterest'}}
+                            <svg>
+                                <use xlink:href="#icon-pinterest"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'facebook_like'}}
+                            <svg>
+                                <use xlink:href="#icon-facebook_like"/>
+                            </svg>
+                        {{/if}}
+                    </a>
+                </li>
+                {{/all}}
+            {{/each}}
+            {{#each settings.add_this.buttons}}
+                {{#or (if service '===' 'email') (if service '===' 'print')}}
+                <li class="socialLinks-item socialLinks-item--{{service}}">
+                    <a class="addthis_button_{{service}} icon icon--{{service}}" {{{annotation}}} {{#if service '===' 'pinterest'}}data-pin-log="button_pinit_bookmarklet" data-pin-href="https://www.pinterest.com/pin/create/button/"{{/if}}>
+                        {{#if service '===' 'email'}}
+                            <svg>
+                                <use xlink:href="#icon-envelope"/>
+                            </svg>
+                        {{/if}}
+
+                        {{#if service '===' 'print'}}
+                            <svg>
+                                <use xlink:href="#icon-print"/>
+                            </svg>
+                        {{/if}}
+                    </a>
+                </li>
+                {{/or}}
+            {{/each}}
+        </ul>
+        <script type="text/javascript"
+                defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e94ed470ee51e32"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                if (typeof(addthis) === "object") {
+                    addthis.toolbox('.addthis_toolbox');
+                }
+            });
+        </script>
+    </div>
+{{/if}}

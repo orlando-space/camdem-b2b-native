@@ -1,0 +1,3 @@
+{
+  "components/f/b2b/checkout-lockdown": "<div class=\"optimizedCheckout-container\">\n    <h3 class=\"optimizedCheckout-lockdown optimizedCheckout-headingPrimary\">\n        {{lang 'b2b.minimum_order_message' currency=settings.money.currency_token value=theme_settings.minimum_checkout_value remaining=(toFixed (subtract theme_settings.minimum_checkout_value cart.sub_total.value) 2)}}\n    </h3>\n\n    <a href=\"{{urls.home}}\">\n        {{lang 'cart.continue_shopping'}}\n    </a>\n</div>\n"
+}

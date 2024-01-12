@@ -1,0 +1,3 @@
+{
+  "components/f/grid-list-switcher/switcher": "<div class=\"grid-list-switcher\">\n    <a href=\"#\" class=\"switcher switch-grid\" data-display-switch=\"grid\">\n        <svg aria-hidden=\"true\">\n            <use xlink:href=\"#icon-th\"></use>\n        </svg>\n    </a>\n    <a href=\"#\" class=\"switcher switch-list\" data-display-switch=\"list\">\n        <svg aria-hidden=\"true\">\n            <use xlink:href=\"#icon-th-list\"></use>\n        </svg>\n    </a>\n</div>\n"
+}

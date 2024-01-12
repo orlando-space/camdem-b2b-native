@@ -1,0 +1,4 @@
+{
+  "components/f/tags/sale-tag": "<div class=\"storeTag saleTag\">\n    {{lang 'products.on_sale'}} \n        {{#if theme_settings.show_percentage_saving}}\n            {{> components/f/tags/sale-saving price=price}}\n        {{/if}}\n    \n</diV>",
+  "components/f/tags/sale-saving": "<span class=\"saleSavingTag\">•\n    {{#if price.non_sale_price_with_tax.value}}\n        {{lang \"products.saving_percentage\"}} {{toInt (multiply (divide (subtract price.non_sale_price_with_tax.value price.with_tax.value) price.non_sale_price_with_tax.value)100)}}%\n    {{else if price.non_sale_price_without_tax.value}}\n        {{lang \"products.saving_percentage\"}} {{toInt (multiply (divide (subtract price.non_sale_price_without_tax.value price.without_tax.value) price.non_sale_price_without_tax.value)100)}}%\n    {{/if}}\n</span>\n"
+}

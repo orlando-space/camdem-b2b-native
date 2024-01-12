@@ -1,0 +1,10 @@
+#consent-manager-update-banner {
+    display: none;
+}
+
+.consent-manager {
+    color: stencilColor("color-textSecondary");
+    display: inline-block;
+    font-size: fontSize("tiny");
+    margin: 0;
+}

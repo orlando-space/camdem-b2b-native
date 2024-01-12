@@ -1,0 +1,252 @@
+// account nav
+
+.account-container {
+  .navBar-section.noprint {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .navBar.navBar--sub.navBar--account {
+    display: none;
+
+    @media screen and (max-width: 800px) {
+      display: none !important;
+    }
+  }
+}
+
+#accountOptions {
+  z-index: 999999;
+}
+
+.page {
+  .navBar-section.noprint {
+    display: flex !important;
+    justify-content: center;
+    
+    a {
+      color: #0071e3;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  .navBar.navBar--sub.navBar--account {
+    display: none;
+
+    @media screen and (max-width: 800px) {
+      display: none !important;
+    }
+  }
+}
+
+// order
+
+// list
+.page_type__account_orderstatus {
+
+  .body {
+
+    .account-container {
+
+      .account {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// detail
+.b2b-order-details {
+
+  .account-product {
+    display: block;
+  }
+
+  .account-product-body {
+    display: block;
+    width: 100%;
+  }
+
+  .account-product .account-product-checkItem .form-checkbox+.form-label::after {
+    top: 0.28571rem;
+  }
+
+  .account-product--alignMiddle .account-product-checkItem {
+    bottom: -21px;
+  }
+}
+
+// setting
+
+.page_type__editaccount {
+
+  .body {
+
+    .account-container {
+
+      .form {
+        display: none;
+      }
+    }
+  }
+}
+
+// shoppinglist
+
+// pdp
+.form+.form-action {
+  margin-top: 0;
+}
+
+// quote
+
+// pdp
+.productView-options .form .rfq-button-container.rfq-pdp-button-container {
+  display: block;
+
+  @include breakpoint("large") {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @include breakpoint("xlarge") {
+    display: block;
+  }
+}
+
+.productView-options .form .form-action {
+
+  @include breakpoint("large") {
+    vertical-align: middle;
+  }
+}
+
+.form .rfq-button-container.rfq-pdp-button-container {
+  margin-right: 0;
+}
+
+.rfq-button-container {
+
+  &.rfq-pdp-button-container {
+    margin-top: 1rem;
+
+    @include breakpoint("medium") {
+      margin-top: 0;
+    }
+
+    @include breakpoint("large") {
+      margin-top: 1rem;
+    }
+
+    .add-to-quote {
+      display: block;
+      width: 100%;
+
+      @include breakpoint("large") {
+        width: auto;
+        max-height: 138.55px;
+      }
+
+      @include breakpoint("xlarge") {
+        width: 100%;
+      }
+
+      &.loadingOverlay {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// cart
+.page-content .cart__container .rfq-button-container.rfq-cart-button-container {
+  float: none;
+  align-items: initial;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cart__container .rfq-button-container.rfq-cart-button-container {
+  margin-right: 0;
+}
+
+.rfq-button-container {
+
+  &.rfq-cart-button-container {
+    width: 100%;
+    margin-top: 1rem;
+
+    .button {
+      max-width: 34.1428571429rem;
+      width: calc(30% - 3rem);
+      margin: 0 1.5rem;
+
+      &.loadingOverlay {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// list
+.quotes-search-form {
+
+  .form-field {
+
+    &:nth-child(2) {
+      line-height: 1;
+    }
+  }
+}
+
+// detail
+.rfq-checkout-btn-wrap {
+  margin-bottom: 3rem;
+}
+
+// masquerade
+
+body .header .salerep-infobox .container {
+
+  @include breakpoint("medium") {
+    padding: 0 6rem;
+  }
+}
+
+
+// camden
+
+// cart
+.cart__container {
+  flex-wrap: wrap;
+}
+
+// recent view
+.productCards--undefined {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productCard--undefined {
+
+  .card-section--body {
+
+    @include breakpoint("small") {
+      width: 100%;
+    }
+  }
+
+  .card-section--price {
+    text-align: left;
+    padding: 1rem 0 .8rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+    @include breakpoint("small") {
+      width: 100%;
+    }
+  }
+}

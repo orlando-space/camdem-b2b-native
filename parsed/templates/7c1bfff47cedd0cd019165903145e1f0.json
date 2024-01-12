@@ -1,0 +1,3 @@
+{
+  "components/f/social/instagram-feed": "<div class=\"instagramContainer\">\n    <h2 class=\"page-heading page-heading--center\">{{lang 'home.social.latest_instagram'}}</h2>\n    <div id=\"instafeed\" class=\"instagramFeed postColumns--{{theme_settings.instagram_columns_count}}\"></div>\n</div>\n"
+}

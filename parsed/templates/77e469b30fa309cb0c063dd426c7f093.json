@@ -1,0 +1,3 @@
+{
+  "components/products/buy-now": "{{#if theme_settings.show_buy_now}}\n<div class=\"form-action form-action--buy-button\">\n    <input id=\"buy-now-button-main\" class=\"button button--buy-now\" type=\"submit\" value=\"{{lang 'products.buy_now'}}\">\n</div>\n{{/if}}\n"
+}

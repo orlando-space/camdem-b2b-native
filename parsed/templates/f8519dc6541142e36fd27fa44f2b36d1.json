@@ -1,0 +1,3 @@
+{
+  "components/f/b2b/quick-add-response": "{{#if cart.status_messages}}\n    {{#each cart.status_messages}}\n        {{#if type '==' 0}}\n            {{trim message}}\n        {{/if}}\n    {{/each}}\n{{else}}\n    {{#if page_type '!=' 'cart'}}\n        {{{lang 'b2b.header.sku_error_stock'}}}\n    {{/if}}\n{{/if}}\n"
+}

@@ -1,0 +1,3 @@
+{
+  "components/f/products/related-article": "{{#each product.custom_fields}}\n    {{#if name '===' 'Related Content'}}\n        {{inject \"relatedContent\" value}}\n        <div class=\"relatedContent\">\n            <h2 class=\"page-heading\">{{lang 'products.related_content'}}</h2>\n        </div>\n    {{/if}}\n{{/each}}\n"
+}

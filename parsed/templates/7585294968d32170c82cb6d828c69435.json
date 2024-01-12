@@ -1,0 +1,3 @@
+{
+  "components/f/category/show-all": "<div class=\"productCount\">\n    {{#if category.count '<' category.total_products}}\n        {{lang 'category.showing_some' count=category.count total=category.total_products}}\n        <a href=\"{{category.url}}?limit=100\">\n        {{#if category.total_products '<=' '100'}}\n            {{lang 'category.show_all'}}\n        {{else}}\n            {{lang 'category.show_100'}}\n        {{/if}}\n        </a>\n    {{else}}\n        {{lang 'category.showing_all' quantity=category.total_products}}\n    {{/if}}\n</div>\n"
+}
